@@ -1,0 +1,17 @@
+{
+  "name" : "cardApp",
+  "description" : "JavaScript's functional programming helper library.",
+  "homepage" : "http://localhost:3000/#",
+  "keywords" : [],
+  "author" : "Ambar Bhatnagar <ambar0099@gmail.com>",
+  "contributors" : [],
+  "dependencies" : [],
+  "repository" : {},
+  "main" : "index.js",
+  "version" : "0.0.1",
+  "unlicenced":"true",
+  "devDependencies": {
+    "express": "*",
+    "ejs":"*"
+  }
+}

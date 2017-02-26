@@ -1,0 +1,79 @@
+.imageUser {
+    border-radius: 50%;
+    width: 40px;
+    margin: 10px;
+}
+
+.fontP {
+    margin-left: 65px;
+    margin-top: -50px;
+    font-size: -0.25rem !important;
+    font-weight: bold;
+}
+
+.txtTruncate {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.txtWrap {
+    word-wrap: break-word;
+}
+
+body {
+    background-image: url("/images/bg.jpg");
+}
+
+.mainContainer {
+    margin-top: 18px;
+}
+
+.nopadding {
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+.close {
+    margin-top: -30px;
+}
+
+.modal-header-info {
+    text-align: center;
+    color: #fff;
+    padding: 9px 15px;
+    border-bottom: 1px solid #eee;
+    background-color: #5bc0de;
+    -webkit-border-top-left-radius: 5px;
+    -webkit-border-top-right-radius: 5px;
+    -moz-border-radius-topleft: 5px;
+    -moz-border-radius-topright: 5px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.addBtn {
+    margin-top: 10%;
+    margin-left: 10%;
+}
+
+.card-action-container {
+    display: none;
+    position: absolute;
+    z-index: 10;
+    height: 100%;
+    width: 100%;
+    background: grey;
+    opacity: 0.5;
+}
+
+.card-action-buttons {
+    display: none;
+    position: relative;
+    z-index: 11;
+}
+
+.menu:hover .card-action-container,
+.menu:hover .card-action-buttons {
+    display: block;
+}

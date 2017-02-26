@@ -1,0 +1,50 @@
+<div class="modal fade" id="addCard" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header-info">
+                <h5 class="modal-title" id="exampleModalLabel">Add Card</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form ng-submit="saveChanges()">
+                    <div class="form-group">
+                        <label for="empId">Employee Id</label>
+                        <input type="text" ng-model="cardDetails.empId" required class="form-control" id="empId" placeholder="Employee Id">
+                    </div>
+                    <div class="form-group">
+                        <label for="empName">Employee Name</label>
+                        <input type="text" ng-model="cardDetails.empName" required class="form-control" id="empDesc" placeholder="Employee Name">
+                    </div>
+                    <div class="form-group">
+                        <label for="empDesc">Employee Description</label>
+                        <input type="text" ng-model="cardDetails.empDesc" required class="form-control" id="empDesc" placeholder="Employee Description">
+                    </div>
+                    <div class="form-group">
+                        <label for="bGrp">Project</label>
+                        <input type="text" ng-model="cardDetails.proj" required class="form-control" id="proj" placeholder="Blood Group">
+                    </div>
+                    <div class="form-group">
+                        <label for="bGrp">Designation</label>
+                        <input type="text" ng-model="cardDetails.desig" required class="form-control" id="desig" placeholder="Blood Group">
+                    </div>
+                    <div class="form-group">
+                        <label for="bGrp">Blood Group</label>
+                        <input type="text" ng-model="cardDetails.bGrp" required class="form-control" id="bGrp" placeholder="Blood Group">
+                    </div>
+                    <div class="form-group">
+                        <label for="doj">Joining Date</label>
+                        <input type="text" ng-model="cardDetails.doj" required class="form-control" id="doj" placeholder="Joining Date">
+                    </div>
+                    <div class="form-group">
+                        <label for="profileLink">Profile Link</label>
+                        <input type="text" ng-model="cardDetails.profileLink" required class="form-control" id="profileLink" placeholder="Profile Link">
+                    </div>
+                    <button type="submit" class="btn btn-info">Save Changes</button>
+                    <button type="button" class="btn btn-info" data-dismiss="modal">Close</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
