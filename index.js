@@ -7,7 +7,7 @@ app.engine('html', require('ejs').renderFile);
 app.set('view engine', 'html');
 
 app.get('/', function (req, res) {
-  	res.render('home.html');
+  	res.render('landingPage.html');
 })
 
 app.listen(3000, function () {

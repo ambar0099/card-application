@@ -1,8 +1,21 @@
-var app = angular.module('cardApp', []);
+var app = angular.module('cardApp', ['ui.router','ngRoute']);
 
-app.config(function() {
+app.config(function($stateProvider,$urlRouterProvider) {
+    
+    $stateProvider.state('login', {
+            url: '/login',
+            templateUrl: 'html/login.html',
+            controller:"loginController"
+        }).state('home', {
+        	url: '/home',
+            templateUrl: 'html/home.html',
+            controller:"cardController"
+        });
 
-})
+$urlRouterProvider.otherwise('/login');
+        
+
+});
 
 
 
@@ -72,6 +85,18 @@ app.directive('cardComponent', function($compile) {
 });
 
 
+
+app.controller("loginController", function($scope, $rootScope,$state) {
+    $scope.login=function(){
+        if($scope.email=="email@fabogo.com" && $scope.pwd=="fabogo"){
+                $state.go("home");
+        }
+        else{
+            $scope.authError='onError';
+        }
+    }
+
+});
 
 
 app.controller("cardController", function($scope, $rootScope) {
